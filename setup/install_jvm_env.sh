@@ -2,7 +2,7 @@
 
 # install jdk 11
 wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz -O /tmp/openjdk-11+28_linux-x64_bin.tar.gz
-sudo tar xfvz /tmp/openjdk-11+28_linux-x64_bin.tar.gz --directory /usr/lib/jvm
+tar xfvz /tmp/openjdk-11+28_linux-x64_bin.tar.gz --directory /usr/lib/jvm
 export JAVA_HOME=/usr/lib/jvm/jdk-11.0.1
 export PATH="$JAVA_HOME/bin:$PATH"
 
