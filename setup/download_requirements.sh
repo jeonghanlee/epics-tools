@@ -38,16 +38,14 @@ fi
 
 # download appliance archiver
 mkdir -p /opt/archapp
-if [ ! -d /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz ]; then
+if [ ! -d /opt/archappl ]; then
     wget https://github.com/slacmshankar/epicsarchiverap/releases/download/v0.0.1_SNAPSHOT_09-Oct-2018/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz -O /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz
     tar xzvf /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz --directory /opt/archapp
     rm /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz
 fi
 # download apache tomcat
-if [ ! -d /opt/archapp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz ]; then
-    wget http://www.gtlib.gatech.edu/pub/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz -O /tmp/apache-tomcat-7.0.92.tar.gz
-    tar xzvf /tmp/apache-tomcat-7.0.92.tar.gz --directory /opt/archapp
-    rm /tmp/apache-tomcat-7.0.92.tar.gz
+if [ ! -f /opt/archapp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz ]; then
+    wget http://www.gtlib.gatech.edu/pub/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz -O /opt/archapp/apache-tomcat-7.0.92.tar.gz
 fi
 
 #glassfish EE server
