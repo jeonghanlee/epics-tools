@@ -44,7 +44,7 @@ if [ ! -d /opt/archapp ]; then
     rm /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz
 fi
 # download apache tomcat
-if [ ! -f /opt/archapp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz ]; then
+if [ ! -f /opt/archapp/apache-tomcat-7.0.92.tar.gz ]; then
     wget http://www.gtlib.gatech.edu/pub/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz -O /opt/archapp/apache-tomcat-7.0.92.tar.gz
 fi
 
