@@ -16,7 +16,7 @@ tar xfvz /tmp/openjdk-8u40-b25-linux-x64-10_feb_2015.tar.gz --directory /opt/lib
 rm /tmp/openjdk-8u40-b25-linux-x64-10_feb_2015.tar.gz
 
 # download maven
-if [ ! -f /tmp/apache-maven-3.6.0-bin.tar.gz ]; then
+if [ ! -d /opt/lib/apache-maven-3.6.0 ]; then
     wget http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz -O /tmp/apache-maven-3.6.0-bin.tar.gz
 fi
 tar xzvf /tmp/apache-maven-3.6.0-bin.tar.gz --directory /opt/lib
