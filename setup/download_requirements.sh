@@ -32,7 +32,7 @@ fi
 # download kafka
 if [ ! -d /opt/kafka_2.11-2.1.0 ]; then
     wget http://mirrors.sonic.net/apache/kafka/2.1.0/kafka_2.11-2.1.0.tgz -O /tmp/kafka_2.11-2.1.0.tgz
-    tar xzvf /tmp/kafka_2.11-2.1.0.tgz -d /opt
+    tar xzvf /tmp/kafka_2.11-2.1.0.tgz --directory /opt
     rm /tmp/kafka_2.11-2.1.0.tgz
 fi
 
@@ -51,7 +51,7 @@ fi
 #glassfish EE server
 if [ ! -d /opt/glassfish3 ]; then
     wget http://download.oracle.com/glassfish/3.1.2.2/release/glassfish-3.1.2.2.zip -O /tmp/glassfish-3.1.2.2.zip
-    unzip /tmp/glassfish-3.1.2.2.zip --directory /opt
+    unzip /tmp/glassfish-3.1.2.2.zip -d /opt
     rm /tmp/glassfish-3.1.2.2.zip
 fi
 
