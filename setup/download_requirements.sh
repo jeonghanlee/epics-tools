@@ -32,7 +32,7 @@ fi
 # download kafka
 if [ ! -d /opt/kafka_2.11-2.1.0 ]; then
     wget http://mirrors.sonic.net/apache/kafka/2.1.0/kafka_2.11-2.1.0.tgz -O /tmp/kafka_2.11-2.1.0.tgz
-    tar xzvf /tmp/kafka_2.11-2.1.0.tgz --directory /opt
+    tar xzvf /tmp/kafka_2.11-2.1.0.tgz -d /opt
     rm /tmp/kafka_2.11-2.1.0.tgz
 fi
 
