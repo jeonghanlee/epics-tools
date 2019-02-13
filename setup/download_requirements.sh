@@ -44,9 +44,16 @@ fi
 tar xzvf /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz --directory /opt/archapp
 rm /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz
 # download apache tomcat
-
 if [ ! -f /opt/archapp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz ]; then
     wget http://www.gtlib.gatech.edu/pub/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz -O /tmp/apache-tomcat-7.0.92.tar.gz
 fi
 tar xzvf /tmp/apache-tomcat-7.0.92.tar.gz --directory /opt/archapp
 rm /tmp/apache-tomcat-7.0.92.tar.gz
+
+#glassfish EE server
+if [ ! -f /opt/glassfish3 ]; then
+    wget http://download.oracle.com/glassfish/3.1.2.2/release/glassfish-3.1.2.2.zip -O /tmp/glassfish-3.1.2.2.zip
+fi
+unzip /tmp/glassfish-3.1.2.2.zip --directory /opt
+rm /tmp/glassfish-3.1.2.2.zip
+
