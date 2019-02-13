@@ -37,8 +37,8 @@ if [ ! -d /opt/kafka_2.11-2.1.0 ]; then
 fi
 
 # download appliance archiver
-mkdir -p /opt/archapp
-if [ ! -d /opt/archappl ]; then
+if [ ! -d /opt/archapp ]; then
+    mkdir -p /opt/archapp
     wget https://github.com/slacmshankar/epicsarchiverap/releases/download/v0.0.1_SNAPSHOT_09-Oct-2018/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz -O /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz
     tar xzvf /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz --directory /opt/archapp
     rm /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz
