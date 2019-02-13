@@ -5,5 +5,5 @@
 # which are all parsed here in alphabetical order
 for i in profile.d/*.sh
 do
-    cp $i /etc/profile.d/
+    source $i
 done
