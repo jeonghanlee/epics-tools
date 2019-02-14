@@ -45,7 +45,7 @@ if [ ! -d ~/epics-tools/services/archapp ]; then
 fi
 # download apache tomcat
 if [ ! -f ~/epics-tools/services/archapp/apache-tomcat-7.0.92.tar.gz ]; then
-    wget http://www.gtlib.gatech.edu/pub/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz -O ~/epics-tools/archapp/apache-tomcat-7.0.92.tar.gz
+    wget http://www.gtlib.gatech.edu/pub/apache/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz -O ~/epics-tools/services/archapp/apache-tomcat-7.0.92.tar.gz
 fi
 
 #glassfish EE server
