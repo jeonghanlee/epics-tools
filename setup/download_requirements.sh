@@ -40,7 +40,7 @@ fi
 if [ ! -d ~/epics-tools/services/archapp ]; then
     mkdir -p ~/epics-tools/services/archapp
     wget https://github.com/slacmshankar/epicsarchiverap/releases/download/v0.0.1_SNAPSHOT_09-Oct-2018/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz -O /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz
-    tar xzvf /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz --directory ~/epics-tools/archapp/services
+    tar xzvf /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz --directory ~/epics-tools/services/archapp
     rm /tmp/archappl_v0.0.1_SNAPSHOT_09-October-2018T15-49-47.tar.gz
 fi
 # download apache tomcat
