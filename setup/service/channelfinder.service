@@ -1,0 +1,32 @@
+[Unit]
+Description=ChannelFinder
+Documentation=https://github.com/ChannelFinder/ChannelFinderService
+Wants=network-online.target elastic.service
+After=network-online.target
+
+[Service]
+User=train
+Group=train
+
+Environment=JAVA_HOME=/home/training/epics-tools/lib/jvm/jdk-11.0.2
+Environment=PATH=/home/training/epics-tools/lib/jvm/jdk-11.0.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+ExecStart=/home/train/epics-tools/services/ChannelFinder-SpringBoot/target/ChannelFinder-4.0.0.jar
+
+# Connects standard output to /dev/null
+StandardOutput=null
+
+# Connects standard error to journal
+StandardError=journal
+
+# When a JVM receives a SIGTERM signal it exits with code 143
+SuccessExitStatus=143
+
+# Specifies the maximum file descriptor number that can be opened by this process
+LimitNOFILE=65535
+
+# Shutdown delay in seconds, before process is tried to be killed with KILL (if configured)
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
