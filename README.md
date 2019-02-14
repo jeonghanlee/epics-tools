@@ -33,10 +33,10 @@ This scripts check out channelfinder version 4 from github and build the binarie
 
 Ensure that elastic and channelfinder are running
 
-Manual step: (or use `configure_cf`)
-Create CF indexes
-`systemctl start elastic`  
-`source ~/epics-tools/services/ChannelFinder-SpringBoot/src/main/resources/mapping_definitions.sh`  
+Manual step: (or use `configure_cf`)  
+Create CF indexes  
+```systemctl start elastic``` 
+```source ~/epics-tools/services/ChannelFinder-SpringBoot/src/main/resources/mapping_definitions.sh```  
 
 Create sample tags and porperties
 curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "SR"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/tags/SR  
