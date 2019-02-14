@@ -51,7 +51,7 @@ fi
 #glassfish EE server
 if [ ! -d ~/epics-tools/services/glassfish3 ]; then
     wget http://download.oracle.com/glassfish/3.1.2.2/release/glassfish-3.1.2.2.zip -O /tmp/glassfish-3.1.2.2.zip
-    unzip /tmp/glassfish-3.1.2.2.zip -d ~/epics-tools
+    unzip /tmp/glassfish-3.1.2.2.zip -d ~/epics-tools/services
     rm /tmp/glassfish-3.1.2.2.zip
 fi
 
