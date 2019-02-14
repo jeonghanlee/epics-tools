@@ -3,9 +3,9 @@
 export JAVA_HOME=~/epics-tools/lib/jvm/jdk-11.0.2
 export PATH="$JAVA_HOME/bin:$PATH"
 
-V="0.0.1"
+V="0.0.1-SNAPSHOT"
 
 JAR="service-alarm-server-${V}.jar"
 
-cd /home/train/epics-tools/clients/phoebus/services/alarm-server/target/service-alarm-server-0.0.1-SNAPSHOT.jar
+cd /home/train/epics-tools/clients/phoebus/services/alarm-server/target
 java -jar $JAR "$@"
