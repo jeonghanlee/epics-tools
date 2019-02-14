@@ -3,9 +3,9 @@
 The end goal is to install and configure epics tools and services
 The tools are installed in the epics-tools folder
 
-epics-tools/services : hosts the epics and other services
-epics-tools/libs     : includes third party libraries
-epics-tools/client   : contains the users tools/clients 
+epics-tools/services : hosts the epics and other services  
+epics-tools/libs     : includes third party libraries  
+epics-tools/client   : contains the users tools/clients   
 
 #### Setup 
 
