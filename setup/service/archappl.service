@@ -8,7 +8,7 @@ After=network-online.target
 User=train
 Group=train
 
-WorkingDirectory=/home/train/epics-tools/services/archapp/
+WorkingDirectory=/home/train/epics-tools/services/archapp
 Environment=JAVA_HOME=/home/train/epics-tools/lib/jvm/java-se-8u40-ri/
 Environment=PATH=/home/train/epics-tools/lib/jvm/java-se-8u40-ri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Environment=ARCHAPPL_PERSISTENCE_LAYER="org.epics.archiverappliance.config.persistence.JDBM2Persistence"
