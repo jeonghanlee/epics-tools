@@ -45,12 +45,16 @@ Create CF indexes
 ```systemctl start elastic``` 
 ```source ~/epics-tools/services/ChannelFinder-SpringBoot/src/main/resources/mapping_definitions.sh```  
 
-Create sample tags and porperties  
-curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "SR"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/tags/SR  
-curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "archive"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/tags/archive
+Create sample channels, tags, and properties  
 
-curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "device"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/properties/device  
-curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "serialNumber"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/properties/serialNumber
+curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "SR"}' --basic -u user:userpass --insecure http://localhost:9090/ChannelFinder/resources/tags/SR  
+curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "archive"}' --basic -u user:userpass --insecure http://localhost:9090/ChannelFinder/resources/tags/archive
+
+curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "device"}' --basic -u user:userpass --insecure http://localhost:9090/ChannelFinder/resources/properties/device  
+curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "serialNumber"}' --basic -u user:userpass --insecure http://localhost:9090/ChannelFinder/resources/properties/serialNumber
+
+curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "test_channel_1"}' --basic -u user:userpass --insecure http://localhost:9090/ChannelFinder/resources/channels/test_channel_1  
+curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "test_channel_2"}' --basic -u user:userpass --insecure http://localhost:9090/ChannelFinder/resources/channels/test_channel_2  
 
 **Install Alarm server**  
 
@@ -68,6 +72,17 @@ Copy the kafka.service and zookeeper.service to /etc/systemd/system
 Create the alarm topics  
 ```configure_alarm.sh```
 
+
+**Install Alarm logger server**  
+
+Create the indexes  
+```source ~/epics-tools/clients/phoebus/services/alarm-logger/startup/create_alarm_index.sh accelerator```  
+
+startup  
+```
+cd ~/epics-tools/setup/startup/
+start_alarm_logger_server.sh
+```
 
 **Install Archiver Appliance**
 
