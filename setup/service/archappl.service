@@ -5,16 +5,9 @@ Wants=network-online.target
 After=network-online.target
 
 [Service]
-User=train
-Group=train
 
-WorkingDirectory=/home/train/epics-tools/services/archapp
-Environment=JAVA_HOME=/home/train/epics-tools/lib/jvm/java-se-8u40-ri/
-Environment=PATH=/home/train/epics-tools/lib/jvm/java-se-8u40-ri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-Environment=ARCHAPPL_PERSISTENCE_LAYER="org.epics.archiverappliance.config.persistence.JDBM2Persistence"
-Environment=ARCHAPPL_PERSISTENCE_LAYER_JDBM2FILENAME="/home/train/epics-tools/services/archapp/config/archappl.jdbm2"
+ExecStart=/home/train/epics-tools/setup/startup/start_archappl.sh
 
-ExecStart=/home/train/epics-tools/services/archapp/quickstart.sh /home/train/epics-tools/services/archapp/apache-tomcat-7.0.92.tar.gz
 # Connects standard output to /dev/null
 StandardOutput=null
 
