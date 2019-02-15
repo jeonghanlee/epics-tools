@@ -73,6 +73,17 @@ Create the alarm topics
 ```configure_alarm.sh```
 
 
+**Install Alarm logger server**  
+
+Create the indexes  
+```source ~/epics-tools/clients/phoebus/services/alarm-logger/startup/create_alarm_index.sh accelerator```  
+
+startup  
+```
+cd ~/epics-tools/setup/startup/
+start_alarm_logger_server.sh
+```
+
 **Install Archiver Appliance**
 
 The download requirements script should have downloaded the required binaries  
