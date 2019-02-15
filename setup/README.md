@@ -10,7 +10,7 @@ epics-tools/client   : contains the users tools/clients
 #### Setup 
 
 
-**Arrange for settings.sh to be sourced:**  
+**Arrange for environment to be set using settings.sh**  
 ```
 echo >>~/.bashrc source ~/epics-tools/setup/settings/settings.sh
 source source ~/epics-tools/setup/settings/settings.sh
