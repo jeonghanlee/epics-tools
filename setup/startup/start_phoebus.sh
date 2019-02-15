@@ -1,9 +1,9 @@
 #!/bin/sh
 
-export JAVA_HOME=~/epics-tools/lib/jvm/jdk-11.0.2
+export JAVA_HOME=/home/train/epics-tools/lib/jvm/jdk-11.0.2
 export PATH="$JAVA_HOME/bin:$PATH"
 
-export MVN_HOME=~/epics-tools/lib/apache-maven-3.6.0
+export MVN_HOME=/home/train/epics-tools/lib/apache-maven-3.6.0
 export PATH="$MVN_HOME/bin:$PATH"
 
 cd /home/train/epics-tools/clients/phoebus/phoebus-product/target
