@@ -38,7 +38,7 @@ Create CF indexes
 ```systemctl start elastic``` 
 ```source ~/epics-tools/services/ChannelFinder-SpringBoot/src/main/resources/mapping_definitions.sh```  
 
-Create sample tags and porperties
+Create sample tags and porperties  
 curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "SR"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/tags/SR  
 curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "archive"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/tags/archive
 
