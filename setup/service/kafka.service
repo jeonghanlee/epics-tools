@@ -19,11 +19,11 @@ After=network.target remote-fs.target zookeeper.service
 
 [Service]
 Type=simple
-User=training
-Group=training
-Environment=JAVA_HOME=/home/training/epics-train/tools/jdk1.8.0_171
-ExecStart=/home/training/epics-train/tools/kafka/bin/kafka-server-start.sh /home/training/epics-train/tools/kafka/config/server.properties
-ExecStop=/home/training/epics-train/tools/kafka/bin/kafka-server-stop.sh
+User=train
+Group=train
+#Environment=JAVA_HOME=/home/train/epics-train/tools/jdk1.8.0_171
+ExecStart=/home/train/epics-tools/services/kafka_2.11-2.1.0/bin/kafka-server-start.sh /home/train/epics-tools/services/kafka_2.11-2.1.0/config/server.properties
+ExecStop=/home/train/epics-tools/services/kafka_2.11-2.1.0/bin/kafka-server-stop.sh
 
 [Install]
 WantedBy=multi-user.target
