@@ -47,5 +47,18 @@ curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "nam
 
 ###### Install Alarm server
 
+Manually Update the kafka  
+```
+mkdir /var/kafka
+chown train /var/kafka
+# Update to use dirs under /var/kafka
+vi kafka_2.11-2.1.0/config/zookeeper.properties 
+vi kafka_2.11-2.1.0/config/server.properties 
+```  
+
+Copy the kafka.service and zookeeper.service to /etc/systemd/system  
+
+Create the alarm topics  
+```configure_alarm.sh```
 
 
