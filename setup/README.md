@@ -10,7 +10,7 @@ epics-tools/client   : contains the users tools/clients
 #### Setup 
 
 
-**Arrange for settings.sh to be sourced:**  
+**Arrange for environment to be set using settings.sh**  
 ```
 echo >>~/.bashrc source ~/epics-tools/setup/settings/settings.sh
 source source ~/epics-tools/setup/settings/settings.sh
@@ -69,3 +69,7 @@ Create the alarm topics
 ```configure_alarm.sh```
 
 
+**Install Archiver Appliance**
+
+The download requirements script should have downloaded the required binaries  
+After copying the archappl.service to /etc/systemd/system the archiver should be ready to go  
