@@ -23,8 +23,8 @@ Type=simple
 User=training
 Group=training
 #Environment=JAVA_HOME=/home/train/epics-tools/jdk1.8.0_171
-ExecStart=/home/train/epics-tools/kafka_2.11-2.1.0/bin/zookeeper-server-start.sh /home/train/epics-tools/kafka_2.11-2.1.0/config/zookeeper.properties
-ExecStop=/home/train/epics-tools/kafka_2.11-2.1.0/bin/zookeeper-server-stop.sh
+ExecStart=/home/train/epics-tools/services/kafka_2.11-2.1.0/bin/zookeeper-server-start.sh /home/train/epics-tools/services/kafka_2.11-2.1.0/config/zookeeper.properties
+ExecStop=/home/train/epics-tools/services/kafka_2.11-2.1.0/bin/zookeeper-server-stop.sh
 
 [Install]
 WantedBy=multi-user.target
