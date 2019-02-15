@@ -69,3 +69,7 @@ Create the alarm topics
 ```configure_alarm.sh```
 
 
+**Install Archiver Appliance**
+
+The download requirements script should have downloaded the required binaries  
+After copying the archappl.service to /etc/systemd/system the archiver should be ready to go  
