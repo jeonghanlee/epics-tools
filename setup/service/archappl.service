@@ -1,0 +1,34 @@
+[Unit]
+Description=archiver appliance
+Documentation=https://slacmshankar.github.io/epicsarchiver_docs
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=train
+Group=train
+
+WorkingDirectory=/home/train/epics-tools/services/archapp/
+Environment=JAVA_HOME=/home/train/epics-tools/lib/jvm/java-se-8u40-ri/
+Environment=PATH=/home/train/epics-tools/lib/jvm/java-se-8u40-ri/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Environment=ARCHAPPL_PERSISTENCE_LAYER="org.epics.archiverappliance.config.persistence.JDBM2Persistence"
+Environment=ARCHAPPL_PERSISTENCE_LAYER_JDBM2FILENAME="/home/train/epics-tools/services/archapp/config/archappl.jdbm2"
+
+ExecStart=/home/train/epics-tools/services/archapp/quickstart.sh /home/train/epics-tools/services/archapp/apache-tomcat-7.0.92.tar.gz
+# Connects standard output to /dev/null
+StandardOutput=null
+
+# Connects standard error to journal
+StandardError=journal
+
+# When a JVM receives a SIGTERM signal it exits with code 143
+SuccessExitStatus=143
+
+# Specifies the maximum file descriptor number that can be opened by this process
+LimitNOFILE=65535
+
+# Shutdown delay in seconds, before process is tried to be killed with KILL (if configured)
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
