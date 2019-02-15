@@ -9,16 +9,23 @@ epics-tools/client   : contains the users tools/clients
 
 #### Setup 
 
-###### Download requirements 
+
+**Arrange for settings.sh to be sourced:**  
+```
+echo >>~/.bashrc source ~/epics-tools/setup/settings/settings.sh
+source source ~/epics-tools/setup/settings/settings.sh
+```
+
+**Download requirements**  
 `
 download_requirements.sh
 `
 This script downloads all the third party binaries like, java, maven, elastic, kafka etc... and organized them under epics-tools
 
-Manual steps
+Manual steps  
 Copy the training-setup/setup/services/* to /etc/systemd/system
 
-###### Install phoebus
+**Install phoebus**  
 
 `install_phoebus`  
 This script checks out the latest phoebus repo and builds
@@ -27,7 +34,7 @@ This script checks out the latest phoebus repo and builds
 3. alarm-logger-service
 4. alarm-config-logger-service
 
-###### Install channel finder
+**Install channel finder**  
 `install_cf`  
 This scripts check out channelfinder version 4 from github and build the binaries
 
@@ -45,7 +52,7 @@ curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "nam
 curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "device"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/properties/device  
 curl -L -v -X PUT -H "Content-Type: application/json" -d '{"owner": "user", "name": "serialNumber"}' --basic -u user:userpass --insecure http://localhost:8080/ChannelFinder/resources/properties/serialNumber
 
-###### Install Alarm server
+**Install Alarm server**  
 
 Manually Update the kafka  
 ```
