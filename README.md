@@ -12,3 +12,16 @@ password: train
 
 root user
 password: root
+
+#### directory structure
+
+**~/build-epics**  
+Contains epics 7 and associated modules
+
+**~/epics-tools**  
+Contains epics services, epics client tools, and supporting libraries
+
+#### Tools
+
+cs-studio/phoebus  
+```>> phoebus```
