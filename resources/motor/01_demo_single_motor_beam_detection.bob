@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>Demo Single Motor Beam Detection</name>
   <width>600</width>
   <height>720</height>
   <background_color>
@@ -98,6 +99,7 @@ $(pv_value)</tooltip>
     <x_axis>
       <title>Motor Postition (Degrees)</title>
       <autoscale>false</autoscale>
+      <log_scale>false</log_scale>
       <minimum>-5.0</minimum>
       <maximum>5.0</maximum>
       <show_grid>true</show_grid>
@@ -109,6 +111,7 @@ $(pv_value)</tooltip>
         <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
         </font>
       </scale_font>
+      <visible>true</visible>
     </x_axis>
     <y_axes>
       <y_axis>
@@ -132,11 +135,11 @@ $(pv_value)</tooltip>
     <traces>
       <trace>
         <name>corelation plot - motor position and sensor</name>
-        <x_pv>XF:31IDA-OP{Tbl-Ax:X1}Mtr-RBV-wf</x_pv>
-        <y_pv>XF:31IDA-BI{Dev:1}E-I-wf</y_pv>
+        <x_pv></x_pv>
+        <y_pv>XF:31IDA-BI{Dev:1}E-I</y_pv>
         <err_pv></err_pv>
         <axis>0</axis>
-        <trace_type>0</trace_type>
+        <trace_type>1</trace_type>
         <color>
           <color red="21" green="21" blue="196">
           </color>
@@ -144,6 +147,21 @@ $(pv_value)</tooltip>
         <line_width>1</line_width>
         <point_type>2</point_type>
         <point_size>5</point_size>
+      </trace>
+      <trace>
+        <name>$(traces[1].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>XF:31IDA-OP{Tbl-Ax:X1}Mtr-RBV</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
       </trace>
     </traces>
   </widget>
@@ -316,5 +334,28 @@ The XY graph is a correlation plot of motor position and sensor reading. This is
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>X/Y Plot</name>
+    <y>720</y>
+    <width>544</width>
+    <height>240</height>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>XF:31IDA-OP{Tbl-Ax:X1}Mtr-RBV</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+      </trace>
+    </traces>
   </widget>
 </display>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>Demo Linking Container</name>
   <width>600</width>
   <height>720</height>
   <background_color>

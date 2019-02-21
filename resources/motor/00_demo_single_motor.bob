@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>Demo Single Motor</name>
   <width>600</width>
   <height>720</height>
   <background_color>
@@ -198,7 +199,7 @@ $(pv_value)</tooltip>
     <name>Action Button</name>
     <actions>
       <action type="open_display">
-        <file>01_demo_single_motor_beam_detection.bob</file>
+        <file>03_demo_linking_container.bob</file>
         <target>replace</target>
         <description>Open Next Demo</description>
       </action>
@@ -259,7 +260,6 @@ XY Graph, traces the changes in the motor set point and readback values
     <y>312</y>
     <width>589</width>
     <height>367</height>
-    <show_toolbar>false</show_toolbar>
     <actions>
     </actions>
   </widget>
