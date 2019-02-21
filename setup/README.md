@@ -91,31 +91,31 @@ After copying the archappl.service to /etc/systemd/system the archiver should be
 
 Configure the Archiver with the following channels
 
-Sampling period 0.1
-XF:31IDA-BI{Dev:1}E-I
-XF:31IDA-BI{Dev:2}E-I
-XF:31IDA-BI{Dev:3}E-I
-XF:31IDA-BI{Dev:4}E-I
-XF:31IDA-BI{Dev:5}E-I
-XF:31ID.RBVA-BI{Dev:6}E-I
-XF:31IDA-OP{Tbl-Ax:X1}Mtr.RBV
-XF:31IDA-OP{Tbl-Ax:X2}Mtr.RBV
-XF:31IDA-OP{Tbl-Ax:X3}Mtr.RBV
-XF:31IDA-OP{Tbl-Ax:X4}Mtr.RBV
-XF:31IDA-OP{Tbl-Ax:X5}Mtr.RBV
-XF:31IDA-OP{Tbl-Ax:X6}Mtr.RBV
-
-Sampling period 1
-XF:31IDA-OP{Tbl-Ax:X1}Mtr
-XF:31IDA-OP{Tbl-Ax:X2}Mtr
-XF:31IDA-OP{Tbl-Ax:X3}Mtr
-XF:31IDA-OP{Tbl-Ax:X4}Mtr
-XF:31IDA-OP{Tbl-Ax:X5}Mtr
-XF:31IDA-OP{Tbl-Ax:X6}Mtr
-XF:31IDA-OP{Tbl-Ax:X1}Mtr_Alarm
-XF:31IDA-OP{Tbl-Ax:X2}Mtr_Alarm
-XF:31IDA-OP{Tbl-Ax:X3}Mtr_Alarm
-XF:31IDA-OP{Tbl-Ax:X4}Mtr_Alarm
-XF:31IDA-OP{Tbl-Ax:X5}Mtr_Alarm
-XF:31IDA-OP{Tbl-Ax:X6}Mtr_Alarm
-
+Sampling period 0.1  
+XF:31IDA-BI{Dev:1}E-I  
+XF:31IDA-BI{Dev:2}E-I  
+XF:31IDA-BI{Dev:3}E-I  
+XF:31IDA-BI{Dev:4}E-I  
+XF:31IDA-BI{Dev:5}E-I  
+XF:31IDA-BI{Dev:6}E-I  
+XF:31IDA-OP{Tbl-Ax:X1}Mtr.RBV  
+XF:31IDA-OP{Tbl-Ax:X2}Mtr.RBV  
+XF:31IDA-OP{Tbl-Ax:X3}Mtr.RBV  
+XF:31IDA-OP{Tbl-Ax:X4}Mtr.RBV  
+XF:31IDA-OP{Tbl-Ax:X5}Mtr.RBV  
+XF:31IDA-OP{Tbl-Ax:X6}Mtr.RBV  
+  
+Sampling period 1  
+XF:31IDA-OP{Tbl-Ax:X1}Mtr  
+XF:31IDA-OP{Tbl-Ax:X2}Mtr  
+XF:31IDA-OP{Tbl-Ax:X3}Mtr  
+XF:31IDA-OP{Tbl-Ax:X4}Mtr  
+XF:31IDA-OP{Tbl-Ax:X5}Mtr  
+XF:31IDA-OP{Tbl-Ax:X6}Mtr  
+XF:31IDA-OP{Tbl-Ax:X1}Mtr_Alarm  
+XF:31IDA-OP{Tbl-Ax:X2}Mtr_Alarm  
+XF:31IDA-OP{Tbl-Ax:X3}Mtr_Alarm  
+XF:31IDA-OP{Tbl-Ax:X4}Mtr_Alarm  
+XF:31IDA-OP{Tbl-Ax:X5}Mtr_Alarm  
+XF:31IDA-OP{Tbl-Ax:X6}Mtr_Alarm  
+  
