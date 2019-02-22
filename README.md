@@ -1,5 +1,9 @@
 # epics-tools
 
+The talks are available at:
+
+https://drive.google.com/drive/folders/1LwTfWfS5ybtEzy9DJhW1n72KCgQCH7fY
+
 The training image can be downloaded from
 
 https://drive.google.com/open?id=0Bxrrhhn0aTLWNVdHb3gxN1B4VDg
