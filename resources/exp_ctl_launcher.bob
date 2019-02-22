@@ -222,7 +222,7 @@ $(pv_value)</tooltip>
       <name>Action Button_2</name>
       <actions>
         <action type="open_display">
-          <file>common-displays/autoconvert/ADBase.opi</file>
+          <file>common-displays/modules/ADBase.opi</file>
           <macros>
             <P>13SIM1:</P>
             <R>cam1:</R>
@@ -322,7 +322,7 @@ $(pv_value)</tooltip>
       <name>Action Button_10</name>
       <actions>
         <action type="open_display">
-          <file>common-displays/autoconvert/simDetectorSetup.opi</file>
+          <file>common-displays/modules/simDetectorSetup.opi</file>
           <macros>
             <P>13SIM1:</P>
             <R>cam1:</R>
@@ -345,7 +345,7 @@ $(pv_value)</tooltip>
       <name>Action Button_11</name>
       <actions>
         <action type="open_display">
-          <file>common-displays/autoconvert/URLDriver.opi</file>
+          <file>common-displays/modules/URLDriver.opi</file>
           <macros>
             <P>13URL1:</P>
             <R>cam1:</R>
