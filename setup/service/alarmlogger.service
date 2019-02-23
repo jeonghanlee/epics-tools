@@ -1,7 +1,7 @@
 [Unit]
 Description=alarm logger service
 Documentation=https://github.com/shroffk/phoebus/tree/master/services/alarm-logger
-Wants=network-online.target elastic.service
+Wants=network-online.target elastic.service kafka.service
 After=network-online.target
 
 [Service]
