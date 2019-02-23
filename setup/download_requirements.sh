@@ -33,7 +33,7 @@ fi
 if [ ! -d ~/epics-tools/services/kibana-6.3.1 ]; then
     wget wget https://artifacts.elastic.co/downloads/kibana/kibana-6.3.1-linux-x86_64.tar.gz -O /tmp/kibana-6.3.1-linux-x86_64.tar.gz
     tar xzvf /tmp/kibana-6.3.1-linux-x86_64.tar.gz --directory ~/epics-tools/services
-    rm /tmp/elasticsearch-6.3.1-linux-x86_64.tar.gz
+    rm /tmp/kibana-6.3.1-linux-x86_64.tar.gz
 fi
 
 # download kafka
