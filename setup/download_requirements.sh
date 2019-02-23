@@ -29,6 +29,13 @@ if [ ! -d ~/epics-tools/services/elasticsearch-6.3.1 ]; then
     rm /tmp/elasticsearch-6.3.1.tar.gz
 fi
 
+# download kibana
+if [ ! -d ~/epics-tools/services/kibana-6.3.1 ]; then
+    wget wget https://artifacts.elastic.co/downloads/kibana/kibana-6.3.1-linux-x86_64.tar.gz -O /tmp/kibana-6.3.1-linux-x86_64.tar.gz
+    tar xzvf /tmp/kibana-6.3.1-linux-x86_64.tar.gz --directory ~/epics-tools/services
+    rm /tmp/elasticsearch-6.3.1-linux-x86_64.tar.gz
+fi
+
 # download kafka
 if [ ! -d ~/epics-tools/services/kafka_2.11-2.1.0 ]; then
     wget http://mirrors.sonic.net/apache/kafka/2.1.0/kafka_2.11-2.1.0.tgz -O /tmp/kafka_2.11-2.1.0.tgz
