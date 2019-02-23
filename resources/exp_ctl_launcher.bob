@@ -193,38 +193,12 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_5</name>
-      <actions>
-        <action type="open_display">
-          <file>common-displays/external/ad_view.opi</file>
-          <macros>
-            <Cam>cam1:</Cam>
-            <Dev></Dev>
-            <Image>image1:</Image>
-            <Stats>Stats1:</Stats>
-            <Sys>13SIM1:</Sys>
-          </macros>
-          <target>tab</target>
-        </action>
-      </actions>
-      <text>AD image (CA)</text>
-      <x>12</x>
-      <y>48</y>
-      <width>133</width>
-      <height>24</height>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
       <name>Action Button_2</name>
       <actions>
         <action type="open_display">
           <file>common-displays/modules/ADBase.opi</file>
           <macros>
-            <P>13SIM1:</P>
+            <P>testcam:</P>
             <R>cam1:</R>
           </macros>
           <target>tab</target>
@@ -270,14 +244,12 @@ $(pv_value)</tooltip>
       <name>Action Button_6</name>
       <actions>
         <action type="open_display">
-          <file>common-displays/external/ad_view_pva.opi</file>
+          <file>common-displays/external/pva_image.bob</file>
           <macros>
-            <Cam>cam1:</Cam>
-            <Dev></Dev>
-            <Image>image1:</Image>
+            <Dev>:</Dev>
+            <Image>Image</Image>
             <Pva>Pva1:</Pva>
-            <Stats>Stats1:</Stats>
-            <Sys>13SIM1:</Sys>
+            <Sys>testcam</Sys>
           </macros>
           <target>tab</target>
         </action>
@@ -297,12 +269,12 @@ $(pv_value)</tooltip>
       <name>Action Button_8</name>
       <actions>
         <action type="open_display">
-          <file>common-displays/custom/vimage.opi</file>
+          <file>common-displays/external/vimage.opi</file>
           <macros>
             <Array>Image</Array>
             <Dev>Pva1:</Dev>
             <Image></Image>
-            <Sys>13SIM1:</Sys>
+            <Sys>testcam:</Sys>
           </macros>
           <target>tab</target>
         </action>
@@ -324,7 +296,7 @@ $(pv_value)</tooltip>
         <action type="open_display">
           <file>common-displays/modules/simDetectorSetup.opi</file>
           <macros>
-            <P>13SIM1:</P>
+            <P>testcam:</P>
             <R>cam1:</R>
           </macros>
           <target>tab</target>
