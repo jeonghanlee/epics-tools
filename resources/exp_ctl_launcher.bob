@@ -62,7 +62,7 @@ $(pv_value)</tooltip>
         <action type="open_display">
           <file>common-displays/external/motor_all.opi</file>
           <macros>
-            <Dev>{Tbl-Ax:X2}</Dev>
+            <Dev>{Tbl-Ax:X1}</Dev>
             <Mtr>Mtr</Mtr>
             <Sys>XF:31IDA-OP</Sys>
           </macros>
@@ -95,6 +95,24 @@ $(pv_value)</tooltip>
       <text>Motor 2</text>
       <x>12</x>
       <y>48</y>
+      <height>24</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_15</name>
+      <actions>
+        <action type="open_display">
+          <file>exp_ctl/custom/exp_ctl_motor_plots.bob</file>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>Plots</text>
+      <x>12</x>
+      <y>84</y>
       <height>24</height>
       <background_color>
         <color red="240" green="240" blue="240">
