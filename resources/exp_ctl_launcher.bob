@@ -94,7 +94,7 @@ $(pv_value)</tooltip>
       </actions>
       <text>Motor 2</text>
       <x>12</x>
-      <y>48</y>
+      <y>51</y>
       <height>24</height>
       <background_color>
         <color red="240" green="240" blue="240">
@@ -112,7 +112,7 @@ $(pv_value)</tooltip>
       </actions>
       <text>Plots</text>
       <x>12</x>
-      <y>84</y>
+      <y>91</y>
       <height>24</height>
       <background_color>
         <color red="240" green="240" blue="240">
@@ -195,10 +195,10 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Area detector</name>
-    <x>342</x>
+    <x>340</x>
     <y>90</y>
     <width>163</width>
-    <height>397</height>
+    <height>320</height>
     <style>1</style>
     <foreground_color>
       <color red="0" green="128" blue="255">
@@ -222,7 +222,7 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <text>Control (ADBase)</text>
+      <text>Control (ADSim)</text>
       <x>12</x>
       <y>12</y>
       <width>133</width>
@@ -249,7 +249,7 @@ $(pv_value)</tooltip>
       </actions>
       <text>Demo (Vimage)</text>
       <x>12</x>
-      <y>156</y>
+      <y>131</y>
       <width>133</width>
       <height>24</height>
       <background_color>
@@ -274,7 +274,7 @@ $(pv_value)</tooltip>
       </actions>
       <text>AD image (PVA)</text>
       <x>12</x>
-      <y>84</y>
+      <y>51</y>
       <width>133</width>
       <height>24</height>
       <background_color>
@@ -299,7 +299,7 @@ $(pv_value)</tooltip>
       </actions>
       <text>AD image (Vimage)</text>
       <x>12</x>
-      <y>120</y>
+      <y>91</y>
       <width>133</width>
       <height>24</height>
       <background_color>
@@ -322,7 +322,7 @@ $(pv_value)</tooltip>
       </actions>
       <text>simDetector setup</text>
       <x>12</x>
-      <y>192</y>
+      <y>171</y>
       <width>133</width>
       <height>24</height>
       <background_color>
@@ -337,7 +337,7 @@ $(pv_value)</tooltip>
         <action type="open_display">
           <file>common-displays/modules/URLDriver.opi</file>
           <macros>
-            <P>13URL1:</P>
+            <P>testcam:</P>
             <R>cam1:</R>
           </macros>
           <target>tab</target>
@@ -345,32 +345,7 @@ $(pv_value)</tooltip>
       </actions>
       <text>Control (ADURL)</text>
       <x>12</x>
-      <y>228</y>
-      <width>133</width>
-      <height>24</height>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_12</name>
-      <actions>
-        <action type="open_display">
-          <file>common-displays/custom/vimage.opi</file>
-          <macros>
-            <Array>Image</Array>
-            <Dev>Pva1:</Dev>
-            <Image></Image>
-            <Sys>13URL1:</Sys>
-          </macros>
-          <target>tab</target>
-        </action>
-      </actions>
-      <text>URL image (Vimage)</text>
-      <x>12</x>
-      <y>300</y>
+      <y>221</y>
       <width>133</width>
       <height>24</height>
       <background_color>
@@ -383,20 +358,19 @@ $(pv_value)</tooltip>
       <name>Action Button_13</name>
       <actions>
         <action type="open_display">
-          <file>common-displays/external/ad_view.opi</file>
+          <file>common-displays/external/pva_image.bob</file>
           <macros>
-            <Cam>cam1:</Cam>
-            <Dev></Dev>
-            <Image>image1:</Image>
-            <Stats>Stats1:</Stats>
-            <Sys>13URL1:</Sys>
+            <Dev>:</Dev>
+            <Image>Image</Image>
+            <Pva>Pva1:</Pva>
+            <Sys>testcam</Sys>
           </macros>
           <target>tab</target>
         </action>
       </actions>
-      <text>URL image (CA)</text>
+      <text>URL image (PVA)</text>
       <x>12</x>
-      <y>264</y>
+      <y>261</y>
       <width>133</width>
       <height>24</height>
       <background_color>
