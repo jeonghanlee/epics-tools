@@ -1,5 +1,23 @@
 # epics-tools
 
+#### IOC build instructions
+
+In a terminal session, run the following commands in order:
+
+    cd ~/build-epics
+    chmod u+w .
+    chmod -R u+w .git
+    chmod -R u+w testapp
+    git pull
+    ./build-testapp.sh
+
+This will build the IOC in the `testapp` directory. It can be run using:
+
+    cd ~/build-epics/testapp/iocBoot/iocimage
+	./st.cmd
+
+#### Presentation locations
+
 The talks are available at:
 
 https://drive.google.com/drive/folders/1LwTfWfS5ybtEzy9DJhW1n72KCgQCH7fY
@@ -7,6 +25,7 @@ https://drive.google.com/drive/folders/1LwTfWfS5ybtEzy9DJhW1n72KCgQCH7fY
 The training image can be downloaded from
 
 https://drive.google.com/open?id=0Bxrrhhn0aTLWNVdHb3gxN1B4VDg
+
 
 #### Accounts
 
