@@ -16,6 +16,13 @@ This will build the IOC in the `testapp` directory. It can be run using:
     cd ~/build-epics/testapp/iocBoot/iocimage
 	./st.cmd
 
+#### Loading new displays
+
+In a terminal session, run the following commands in order:
+
+    cd ~/epics-tools
+	git pull
+
 #### Presentation locations
 
 The talks are available at:
